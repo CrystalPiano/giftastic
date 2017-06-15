@@ -5,8 +5,7 @@
 // ==============  VARIABLES  ===============
 var APIKey = "dc6zaTOxFJmzC";
 var queryURL = "http://api.giphy.com/v1/gifs/search?" +
-      "q=funny+cat&api_key=" + APIKey;
-
+      "q=coffee&api_key=" + APIKey;
 
 
 // ==============  EVENTS  ==================
@@ -28,17 +27,18 @@ var queryURL = "http://api.giphy.com/v1/gifs/search?" +
         // Log the resulting object
         console.log(response);
 
+
 	//Writing the desired calls to the div
-	var imageUrl = response.data.images.original_url;
+	var imageUrl = response.data["3"].images.original.url;
 
         // Creating and storing an image tag
-        var catImage = $("<img>");
+        var image = $("<img>");
 
         // Setting the catImage src attribute to imageUrl
-        catImage.attr("src", imageUrl);
-        catImage.attr("alt", "cat image");
+        image.attr("src", imageUrl);
+        image.attr("alt", "image");
 
         // Prepending the catImage to the images div
-        $(".linkTest").prepend(catImage);
+        $(".linkTest").prepend(image);
 
 });
