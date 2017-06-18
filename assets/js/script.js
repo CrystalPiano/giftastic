@@ -3,12 +3,10 @@
 // 
 // 
 // ==============  VARIABLES  ===============
+var topics = ['Sheltie','Bulldog','Pomeranian', 'Bernese Mountain Dog', 'Golden Retriever'];
 var APIKey = "dc6zaTOxFJmzC";
 var queryURL = "https://api.giphy.com/v1/gifs/search?" +
       "q=" + topics + "&api_key=" + APIKey;
-
-var topics = "dog";
-//var topics = ['gulfstream', 'boeing', 'airbus', 'cessna', 'learjet', 'aerion'];
 // ==============  EVENTS  ==================
 
 
@@ -49,6 +47,12 @@ $("#test").on("click", function() {
   $("#testLine").append(imageUrl);
 });
 
+
+var arrayLength = topics.length;
+for (var i = 0; i < arrayLength; i++) {
+    (topics[i]);
+    //Do something
+}
 
 // Creating buttons dynamically from my array of topics
 //for(var i = 0; i < topics.length; i++)
