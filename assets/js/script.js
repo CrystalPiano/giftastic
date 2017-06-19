@@ -28,7 +28,7 @@ var queryURL = "https://api.giphy.com/v1/gifs/search?" +
 
 
 	//Writing the desired calls to the div
-	var imageUrl = response.data["1"].images.original.url;
+	var imageUrl = response.data["0"].images.original.url;
 
         // Creating and storing an image tag
         var image = $("<img>");
@@ -43,24 +43,18 @@ var queryURL = "https://api.giphy.com/v1/gifs/search?" +
 });
 
 
-$("#test").on("click", function() {
+$(".test-1").on("click", function() {
   $("#testLine").append(imageUrl);
 });
 
 
-var arrayLength = topics.length;
-for (var i = 0; i < arrayLength; i++) {
-    (topics[i]);
-    document.createElement("<input type='button' value='" + topics[i] + "'/>");
-}
+//var dogDiv = document.getElementById("testLine");
 
-// Creating buttons dynamically from my array of topics
-//for(var i = 0; i < topics.length; i++)
-//{
-    //document.createElement("<div>");
-    //for(var j = 0; j < topics[i].length; j++)
-    //{
-       //document.createElement("<input type='button' value='" + topics[i][j] + "'/>");
-    //}
-    //document.createElement("</div>");
-//}
+    //for (var i = 0; i < topics.length; i++) {
+
+      //var newDogDiv = document.createElement("<div>" + topics[i] + "</div>");
+
+        //newDogDiv.innerHTML = topics[i];
+
+      //$('#testLine').append(newDogDiv);
+    //};
