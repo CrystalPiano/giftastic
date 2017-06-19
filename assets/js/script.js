@@ -28,7 +28,7 @@ var queryURL = "https://api.giphy.com/v1/gifs/search?" +
 
 
 	//Writing the desired calls to the div
-	var imageUrl = response.data["0"].images.original.url;
+	var imageUrl = response.data["1"].images.original.url;
 
         // Creating and storing an image tag
         var image = $("<img>");
@@ -51,7 +51,7 @@ $("#test").on("click", function() {
 var arrayLength = topics.length;
 for (var i = 0; i < arrayLength; i++) {
     (topics[i]);
-    //Do something
+    document.createElement("<input type='button' value='" + topics[i] + "'/>");
 }
 
 // Creating buttons dynamically from my array of topics
