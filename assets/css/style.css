@@ -21,6 +21,11 @@ body {
 
 }
 
+.gif-box {
+	width: 100px;
+	clear: all;
+}
+
 .gif-box-0 {
 float: left;
 padding: 10px;

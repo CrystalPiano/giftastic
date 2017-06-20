@@ -4,7 +4,7 @@
 // Add multiple GIF results per search
 // ==============  VARIABLES  ===============
 //var topics = ['Sheltie','Bulldog','Pomeranian','Bernese Mountain Dog','Golden Retriever','German Shepard','French Bull Dog','Husky','Mastif','Corgi'];
-var topics = ['Pomeranian'];
+var topics = ['Sheltie'];
 var APIKey = "dc6zaTOxFJmzC";
 var queryURL = "https://api.giphy.com/v1/gifs/search?" +
       "q=" + topics + "&api_key=" + APIKey;
@@ -82,8 +82,22 @@ var queryURL = "https://api.giphy.com/v1/gifs/search?" +
     image9.attr("src", imageUrl9);
     image9.attr("alt", "sheltie gif");
 
-// Linknig the image variables to their html divs
+// Linking the sheltie button to image variables and to their html divs
     $(".sheltie-button").on("click", function() {
+      $(".gif-box-0").prepend(image);
+      $(".gif-box-1").prepend(image1);
+      $(".gif-box-2").prepend(image2);
+      $(".gif-box-3").prepend(image3);
+      $(".gif-box-4").prepend(image4);
+      $(".gif-box-5").prepend(image5);
+      $(".gif-box-6").prepend(image6);
+      $(".gif-box-7").prepend(image7);
+      $(".gif-box-8").prepend(image8);
+      $(".gif-box-9").prepend(image9);
+    });
+
+// Linking the bulldog button to image variables and to their html divs
+    $(".bulldog-button").on("click", function() {
       $(".gif-box-0").prepend(image);
       $(".gif-box-1").prepend(image1);
       $(".gif-box-2").prepend(image2);
