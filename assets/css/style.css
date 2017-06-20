@@ -1,3 +1,73 @@
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
 body {
 	margin: 20px;
+}
+
+.button-box {
+	border: 2px solid grey;
+	margin-bottom: 20px;
+}
+
+.spacer-bar {
+	margin-bottom: 20px;
+	border: 2px solid grey;
+}
+
+.gif-container {
+
+}
+
+.gif-box-0 {
+float: left;
+padding: 10px;
+
+}
+
+.gif-box-1 {
+float: left;
+padding: 10px;
+}
+
+.gif-box-2 {
+float: left;
+padding: 10px;
+}
+
+.gif-box-3 {
+float: left;
+padding: 10px;
+}
+
+.gif-box-4 {
+float: left;
+padding: 10px;
+}
+
+.gif-box-5 {
+float: left;
+padding: 10px;
+}
+
+.gif-box-6 {
+float: left;
+padding: 10px;
+}
+
+.gif-box-7 {
+float: left;
+padding: 10px;
+}
+
+.gif-box-8 {
+float: left;
+padding: 10px;
+}
+
+.gif-box-9 {
+float: left;
+padding: 10px;
 }
