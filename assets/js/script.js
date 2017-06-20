@@ -112,7 +112,15 @@ var queryURL = "https://api.giphy.com/v1/gifs/search?" +
 
 });
 
-
+$(document).ready(function() {
+  for(i = 0; i <=topics.length; i++) {
+     $('<button/>', {
+        text: i, //set text 1 to 10???
+        id: 'btn_'+i,
+        click: function () { alert('hi'); }
+    });
+  }
+});
 
 //Dynamically created topic buttons
 //var dogDiv = document.getElementById("testLine");
