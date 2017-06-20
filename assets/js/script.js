@@ -1,7 +1,7 @@
 // ==============  NOTES  ===================
 // Create dynamic topic buttons
 // Add user animal addition field
-// Add multiple GIF results per search
+// I could not get dynamic buttons to generate ** Thus I began down this path, but know dynamic buttons are they way to really go.
 // ==============  VARIABLES  ===============
 //var topics = ['Sheltie','Bulldog','Pomeranian','Bernese Mountain Dog','Golden Retriever','German Shepard','French Bull Dog','Husky','Mastif','Corgi'];
 var topics = ['Sheltie'];
