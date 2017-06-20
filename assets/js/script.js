@@ -3,8 +3,8 @@
 // Add user animal addition field
 // I could not get dynamic buttons to generate ** Thus I began down this path, but know dynamic buttons are they way to really go.
 // ==============  VARIABLES  ===============
-//var topics = ['Sheltie','Bulldog','Pomeranian','Bernese Mountain Dog','Golden Retriever','German Shepard','French Bull Dog','Husky','Mastif','Corgi'];
-var topics = ['Sheltie'];
+var topics = ['Sheltie','Bulldog','Pomeranian','Bernese Mountain Dog','Golden Retriever','German Shepard','French Bull Dog','Husky','Mastif','Corgi'];
+//var topics = ['Sheltie'];
 var APIKey = "dc6zaTOxFJmzC";
 var queryURL = "https://api.giphy.com/v1/gifs/search?" +
       "q=" + topics + "&api_key=" + APIKey;
@@ -13,8 +13,24 @@ var queryURL = "https://api.giphy.com/v1/gifs/search?" +
 
 
 // ==============  FUNCTIONS  ===============
+//Dynamically created topic buttons
+function displayButtons() {
+    $("#button-box").empty();
+    for (var i = 0; i < topics.length; i++) {
+      var button = $('<button>');
+      button.addClass("dog-button");
+      button.attr("id", topics[i]);
+      button.attr("value", i);
+      button.html(topics[i]);
+      $("#button-box").append(button);
+      console.log("working");
+    };
+  };
+
+displayButtons();
+
   //AJAX Call and test console log
-	$.ajax({
+  $.ajax({
         url: queryURL,
         method: "GET"
       })
@@ -25,6 +41,7 @@ var queryURL = "https://api.giphy.com/v1/gifs/search?" +
         console.log(queryURL);
         // Log the resulting object
         console.log(response);
+
 
 //Writing the desired calls to the div
 	var imageUrl = response.data["0"].images.downsized.url;
@@ -112,18 +129,8 @@ var queryURL = "https://api.giphy.com/v1/gifs/search?" +
 
 });
 
-$(document).ready(function() {
-  for(i = 0; i <=topics.length; i++) {
-     $('<button/>', {
-        text: i, //set text 1 to 10???
-        id: 'btn_'+i,
-        click: function () { alert('hi'); }
-    });
-  }
-});
 
-//Dynamically created topic buttons
-//var dogDiv = document.getElementById("testLine");
+
 
     //for (var i = 0; i < topics.length; i++) {
 
