@@ -5,7 +5,7 @@
 // ==============  VARIABLES  ===============
 var topics = ['Sheltie','Bulldog','Pomeranian','Bernese Mountain Dog','Golden Retriever','German Shepard','French Bull Dog','Husky','Mastif','Corgi'];
 //var topics = ['Sheltie'];
-var APIKey = "dc6zaTOxFJmzC";
+var APIKey = "";
 var queryURL = "https://api.giphy.com/v1/gifs/search?" +
       "q=" + topics + "&api_key=" + APIKey;
 // ==============  EVENTS  ==================
